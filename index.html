@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Crystal Collectors Game</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
   <h1>Crystal Collectors</h1>
@@ -13,11 +15,23 @@
   <p>You win the game by matching your total score to the random number. You lose the game if your score goes above the random number.</p>
   <p>The value of each crystal is hidden until you click on it.</p>
   <p>Each time the game starts, the value of each crystal will change.</p>
+
   <div id="randomNumber"></div>
-  <div id="winsLoses"></div>
-  <img src="./assets/images/emerald.png" alt="Emerald">
-  <img src="./assets/images/diamond.png" alt="Diamond">
-  <img src="./assets/images/yellow-jewel.png" alt="Yellow Jewel">
-  <img src="./assets/images/ruby.png" alt="Ruby">
+
+  <div id="score">
+    <p>Wins: <span id="wins"></span></p>
+    <p>Losses: <span id="losses"></span></p>
+  </div>
+
+  <img id="emerald" class="emerald jewel" value="emerald" src="./assets/images/emerald.png" alt="Emerald">
+  <img id="diamond" class="diamond jewel" value="diamond" src="./assets/images/diamond.png" alt="Diamond">
+  <img id="amber" class="amber jewel" value="amber" src="./assets/images/yellow-jewel.png" alt="Amber">
+  <img id="ruby" class="ruby jewel" value="ruby" src="./assets/images/ruby.png" alt="Ruby">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="./assets/javascript/game.js"></script>
 </body>
 </html>
