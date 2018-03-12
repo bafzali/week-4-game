@@ -7,7 +7,7 @@ $(document).ready(function() {
   let rubyValue;
   let randomNumber;
   let jewelNumberGenerated;
-  let clickValue = 0;
+  let clickTotal = 0;
 
   const generateRandomNumber = function() {
     randomNumber = Math.floor(Math.random() * (120 - 19)) + 19;
@@ -30,58 +30,55 @@ $(document).ready(function() {
     $('#randomNumber').html(randomNumber);
     $('#wins').html(wins);
     $('#losses').html(losses);
-    clickValue = 0;
-    console.log(`Emerald: ${emeraldValue}`);
-    console.log(`Diamond: ${diamondValue}`);
-    console.log(`Amber: ${amberValue}`);
-    console.log(`Ruby: ${rubyValue}`);
+    clickTotal = 0;
+    $('#clickTotal').html(clickTotal);
   };
 
   startGame();
 
   $('#emerald').on('click', function() {
-    clickValue += emeraldValue;
-    console.log(clickValue);
-    if (clickValue === randomNumber) {
+    clickTotal += emeraldValue;
+    $('#clickTotal').html(clickTotal);
+    if (clickTotal === randomNumber) {
       wins++;
       startGame();
-    } else if (clickValue > randomNumber) {
+    } else if (clickTotal > randomNumber) {
       losses++;
       startGame();
     }
   });
 
   $('#diamond').on('click', function() {
-    clickValue += diamondValue;
-    console.log(clickValue);
-    if (clickValue === randomNumber) {
+    clickTotal += diamondValue;
+    $('#clickTotal').html(clickTotal);
+    if (clickTotal === randomNumber) {
       wins++;
       startGame();
-    } else if (clickValue > randomNumber) {
+    } else if (clickTotal > randomNumber) {
       losses++;
       startGame();
     }
   });
 
   $('#amber').on('click', function() {
-    clickValue += amberValue;
-    console.log(clickValue);
-    if (clickValue === randomNumber) {
+    clickTotal += amberValue;
+    $('#clickTotal').html(clickTotal);
+    if (clickTotal === randomNumber) {
       wins++;
       startGame();
-    } else if (clickValue > randomNumber) {
+    } else if (clickTotal > randomNumber) {
       losses++;
       startGame();
     }
   });
 
   $('#ruby').on('click', function() {
-    clickValue += rubyValue;
-    console.log(clickValue);
-    if (clickValue === randomNumber) {
+    clickTotal += rubyValue;
+    $('#clickTotal').html(clickTotal);
+    if (clickTotal === randomNumber) {
       wins++;
       startGame();
-    } else if (clickValue > randomNumber) {
+    } else if (clickTotal > randomNumber) {
       losses++;
       startGame();
     }

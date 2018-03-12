@@ -1,20 +1,72 @@
+body {
+  background-image: url("../images/shattered-island.gif");
+  margin: 0;
+}
+
+h1 {
+  /* background-color: #272830; */
+  color: whitesmoke;
+  margin: 0;
+  padding: 20px 0 30px 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  text-decoration-line: underline;
+  padding-top: 15px;
+  color: #272830;
+
+}
+
+h3 {
+  font-weight: bold;
+  color: #272830;
+}
+
+p {
+  font-size: 1.1em;
+  color: #272830;
+
+}
+
 .emerald {
-  width: 100px;
+  width: 120px;
   height: auto;
+  margin: 0 20px;
 }
 
 .diamond {
   width: 130px;
   height: auto;
+  margin: 0 20px;
 }
 
 .amber {
-  width: 82px;
+  width: 110px;
   height: auto;
-  margin: 0 9px;
+  margin: 0 29px;
 }
 
 .ruby {
-  width: 100px;
+  width: 110px;
   height: auto;
+  margin: 0 20px;
+}
+
+.instructions {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.side-bar {
+  color: #272830;
+  /* background-color: whitesmoke; */
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.jewel-section {
+  background-color: whitesmoke;
+  padding: 20px;
 }
